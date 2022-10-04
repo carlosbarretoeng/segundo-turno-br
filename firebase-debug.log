@@ -1,0 +1,94 @@
+[debug] [2022-10-04T17:55:34.543Z] ----------------------------------------------------------------------
+[debug] [2022-10-04T17:55:34.544Z] Command:       /usr/local/bin/firebase /home/carlos/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2022-10-04T17:55:34.544Z] CLI Version:   9.23.1
+[debug] [2022-10-04T17:55:34.545Z] Platform:      linux
+[debug] [2022-10-04T17:55:34.545Z] Node Version:  v12.18.1
+[debug] [2022-10-04T17:55:34.545Z] Time:          Tue Oct 04 2022 14:55:34 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-10-04T17:55:34.545Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-04T17:55:34.546Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-10-04T17:55:34.555Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-04T17:55:34.555Z] > authorizing via signed-in user (carlosbarreto.eng@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/carlos/projetos/segundo-turno-br
+
+[debug] [2022-10-04T17:55:34.878Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-10-04T17:55:34.878Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-10-04T17:56:18.161Z] > refreshing access token with scopes: []
+[debug] [2022-10-04T17:56:18.162Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-10-04T17:56:18.559Z] <<< HTTP RESPONSE 200 {"date":"Tue, 04 Oct 2022 17:56:17 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-10-04T17:56:18.580Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-10-04T17:56:19.330Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-10-04T17:56:19.330Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project segundo-turno-br (segundo-turno-br) 
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2022-10-04T17:56:21.255Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-04T17:56:21.255Z] > authorizing via signed-in user (carlosbarreto.eng@gmail.com)
+[debug] [2022-10-04T17:56:21.255Z] [iam] checking project segundo-turno-br for permissions ["firebase.projects.get"]
+[debug] [2022-10-04T17:56:21.255Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-10-04T17:56:21.256Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-10-04T17:56:21.514Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Tue, 04 Oct 2022 17:56:20 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-10-04T17:56:21.526Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/segundo-turno-br:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2022-10-04T17:56:22.459Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 04 Oct 2022 17:56:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=744","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-10-04T17:56:22.460Z] > refreshing access token with scopes: []
+[debug] [2022-10-04T17:56:22.460Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-10-04T17:56:22.461Z] > refreshing access token with scopes: []
+[debug] [2022-10-04T17:56:22.461Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-10-04T17:56:22.693Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Tue, 04 Oct 2022 17:56:21 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-10-04T17:56:22.714Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/segundo-turno-br/services/runtimeconfig.googleapis.com:enable [none]
+[debug] [2022-10-04T17:56:22.716Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 04 Oct 2022 17:56:21 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-10-04T17:56:22.729Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/segundo-turno-br/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2022-10-04T17:56:23.816Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/segundo-turno-br/services/runtimeconfig.googleapis.com:enable 200
+[debug] [2022-10-04T17:56:23.816Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/segundo-turno-br/services/runtimeconfig.googleapis.com:enable {"name":"operations/noop.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1.EnableServiceResponse","service":{"name":"projects/410923317433/services/runtimeconfig.googleapis.com","config":{"name":"runtimeconfig.googleapis.com","title":"Cloud Runtime Configuration API","documentation":{"summary":"The Runtime Configurator allows you to dynamically configure and expose variables through Google Cloud Platform. In addition, you can also set Watchers and Waiters that will watch for changes to your data and return based on certain conditions."},"quota":{},"authentication":{},"usage":{"requirements":["serviceusage.googleapis.com/tos/cloud"]},"monitoring":{}},"state":"ENABLED","parent":"projects/410923317433"}}}
+[debug] [2022-10-04T17:56:24.471Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/segundo-turno-br/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2022-10-04T17:56:24.471Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/segundo-turno-br/services/cloudfunctions.googleapis.com:enable {"name":"operations/acf.p2-410923317433-54c2444b-b0d9-41b8-b6c4-94d0c063a074"}
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/.eslintrc.js 
+[info] ✔  Wrote functions/tsconfig.json 
+[info] ✔  Wrote functions/tsconfig.dev.json 
+[info] ✔  Wrote functions/src/index.ts 
+[info] ✔  Wrote functions/.gitignore 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at /home/carlos/projetos/segundo-turno-br 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=604686217&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-10-04T17:57:26.740Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"4309ab186b5d124e2b93","redirect_uri":"http://localhost:9005","state":"604686217"}
+[debug] [2022-10-04T17:57:27.097Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Tue, 04 Oct 2022 17:57:26 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"7dd6b0afdb23630b2512637b22bf6109\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"707E:211D:459F62:4CC721:633C7406"}
+[debug] [2022-10-04T17:57:27.101Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-10-04T17:57:27.444Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-10-04T17:57:27.444Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"carlosbarretoeng","id":2592224,"node_id":"MDQ6VXNlcjI1OTIyMjQ=","avatar_url":"https://avatars.githubusercontent.com/u/2592224?v=4","gravatar_id":"","url":"https://api.github.com/users/carlosbarretoeng","html_url":"https://github.com/carlosbarretoeng","followers_url":"https://api.github.com/users/carlosbarretoeng/followers","following_url":"https://api.github.com/users/carlosbarretoeng/following{/other_user}","gists_url":"https://api.github.com/users/carlosbarretoeng/gists{/gist_id}","starred_url":"https://api.github.com/users/carlosbarretoeng/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/carlosbarretoeng/subscriptions","organizations_url":"https://api.github.com/users/carlosbarretoeng/orgs","repos_url":"https://api.github.com/users/carlosbarretoeng/repos","events_url":"https://api.github.com/users/carlosbarretoeng/events{/privacy}","received_events_url":"https://api.github.com/users/carlosbarretoeng/received_events","type":"User","site_admin":false,"name":"Carlos Roberto Barreto Junior","company":"UNIFAGOC","blog":"unifagoc.edu.br","location":"Ubá, MG","email":null,"hireable":null,"bio":null,"twitter_username":"barreto_eng","public_repos":18,"public_gists":0,"followers":8,"following":2,"created_at":"2012-10-18T19:28:31Z","updated_at":"2022-10-04T17:57:12Z","private_gists":1,"total_private_repos":17,"owned_private_repos":17,"disk_usage":121684,"collaborators":1,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as carlosbarretoeng 
+[info] 
